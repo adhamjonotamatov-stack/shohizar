@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8fc" />
+    <meta
+      name="description"
+      content="Matematika darslari va mashqlari 1–4-sinf o‘quvchilari uchun."
+    />
+    <title>Math Vision — matematika osonroq</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Math Vision bosh sahifa"
+        ><img class="brand-mark" src="logo.svg" alt="Math Vision logosi" />
+        <span>math<span class="brand-light">vision</span></span></a
+      >
+      <nav class="main-nav" aria-label="Asosiy navigatsiya">
+        <a class="nav-active" href="#home">Bosh sahifa</a
+        ><a href="#lessons">Sinflar</a><a href="#lessons">Darslar</a
+        ><a href="#about">Biz haqimizda</a>
+      </nav>
+      <a class="header-button" href="#lessons"
+        >O‘qishni boshlash <span>↗</span></a
+      >
+      <button
+        class="menu-toggle"
+        aria-label="Menyuni ochish"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </header>
+    <main id="home">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span> MATEMATIKA — 1–4-SINF
+          </div>
+          <h1>Matematika<br />endi <span>osonroq.</span></h1>
+          <p class="hero-text">
+            Mavzularni tushunib o‘rganing, misollarni bosqichma-bosqich yeching
+            va bilimingizni mustahkamlang.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#lessons"
+              >Darslarni ko‘rish <span>→</span></a
+            ><a class="text-link" href="#lessons"
+              ><span class="play-icon">▶</span> Qanday ishlaydi?</a
+            >
+          </div>
+        </div>
+        <div class="hero-image-space">
+          <img
+            class="hero-image"
+            src="img/Пастельный урок математики с теоремой Пифагора.png"
+            alt="O‘qituvchi o‘quvchiga matematika mavzusini tushuntirmoqda"
+          />
+        </div>
+      </section>
+      <section class="lesson-section" id="lessons">
+        <div class="wrap">
+          <div class="section-heading lesson-heading">
+            <div>
+              <h2>O‘ZINGIZGA KERAKLI SINFNI TANLANG</h2>
+            </div>
+            <label class="search-box"
+              ><span>⌕</span
+              ><input
+                id="lesson-search"
+                type="search"
+                placeholder="Mavzu qidirish..."
+                aria-label="Mavzu qidirish"
+            /></label>
+          </div>
+          <div class="filter-row" aria-label="Sinf bo‘yicha saralash">
+            <button class="filter-chip selected" data-filter="all">
+              Barchasi</button
+            ><button class="filter-chip" data-filter="1">1-sinf</button
+            ><button class="filter-chip" data-filter="2">2-sinf</button
+            ><button class="filter-chip" data-filter="3">3-sinf</button
+            ><button class="filter-chip" data-filter="4">4-sinf</button>
+          </div>
+          <div class="lesson-grid" id="lesson-grid">
+            <article
+              class="lesson-card"
+              data-grade="1"
+              data-search="qo‘shish ayirish sonlar"
+            >
+              <div class="lesson-visual visual-mint">
+                <span class="visual-number">12 <i>+</i> 8</span
+                ><span class="visual-caption">SONLAR BILAN ISHLASH</span
+                ><span class="visual-doodle">＋</span>
+              </div>
+              <div class="lesson-info">
+                <div class="lesson-meta">
+                  <span>1-sinf</span><span>•</span><span>15 daqiqa</span>
+                </div>
+                <h3>1-sinf mavzulari</h3>
+                <p>Sonlarni tez va to‘g‘ri hisoblash asoslari.</p>
+                <a href="dars.html?mavzu=qoshish" class="lesson-link"
+                  >Darsni boshlash <span>→</span></a
+                >
+              </div>
+            </article>
+            <article
+              class="lesson-card"
+              data-grade="2"
+              data-search="qo‘shish ayirish sonlar"
+            >
+              <div class="lesson-visual visual-lilac">
+                <span class="visual-number">38 <i>+</i> 12</span
+                ><span class="visual-caption">2-SINF MATEMATIKA</span
+                ><span class="visual-doodle">+</span>
+              </div>
+              <div class="lesson-info">
+                <div class="lesson-meta">
+                  <span>2-sinf</span><span>•</span><span>15 daqiqa</span>
+                </div>
+                <h3>2-sinf mavzulari</h3>
+                <p>Yig‘indi va ayirmani sodda misollar bilan takrorlang.</p>
+                <a href="dars2.html" class="lesson-link"
+                  >Darsni boshlash <span>→</span></a
+                >
+              </div>
+            </article>
+            <article
+              class="lesson-card"
+              data-grade="3"
+              data-search="takrorlash qo‘shish ayirish qavsli ifodalar"
+            >
+              <div class="lesson-visual visual-peach">
+                <span class="visual-number equation-visual">124 + 238</span
+                ><span class="visual-caption">3-SINF MATEMATIKA</span
+                ><span class="visual-doodle">×</span>
+              </div>
+              <div class="lesson-info">
+                <div class="lesson-meta">
+                  <span>3-sinf</span><span>•</span><span>20 daqiqa</span>
+                </div>
+                <h3>3-sinf mavzulari</h3>
+                <p>2-sinfni takrorlang, so‘ng 3-sinf mavzularini o‘rganing.</p>
+                <a href="dars3.html" class="lesson-link"
+                  >Darsni boshlash <span>→</span></a
+                >
+              </div>
+            </article>
+            <article
+              class="lesson-card"
+              data-grade="4"
+              data-search="kasr geometriya shakllar perimetr"
+            >
+              <div class="lesson-visual visual-blue">
+                <span class="visual-number function-visual">4 265</span
+                ><span class="visual-caption">4-SINF MATEMATIKA</span
+                ><span class="visual-doodle">¼</span>
+              </div>
+              <div class="lesson-info">
+                <div class="lesson-meta">
+                  <span>4-sinf</span><span>•</span><span>20 daqiqa</span>
+                </div>
+                <h3>4-sinf mavzulari</h3>
+                <p>3-sinf mavzularini takrorlab, katta sonlarni o‘rganing.</p>
+                <a href="dars4.html" class="lesson-link"
+                  >Darsni boshlash <span>→</span></a
+                >
+              </div>
+            </article>
+          </div>
+          <p class="empty-state" id="empty-state" hidden>
+            Mos mavzu topilmadi. Boshqa so‘z bilan qidirib ko‘ring.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap footer-inner">
+        <a class="brand footer-brand" href="#home"
+          ><img class="brand-mark" src="logo.svg" alt="Math Vision logosi" />
+          ><span>math<span class="brand-light">vision</span></span></a
+        >
+        <p>Matematikani tushunib o‘rganish uchun.</p>
+        <span>© 2025 Math Vision</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <!--
+      const filterButtons = document.querySelectorAll(".filter-chip");
+      const lessonCards = document.querySelectorAll(".lesson-card");
+      const searchInput = document.querySelector("#lesson-search");
+      const emptyState = document.querySelector("#empty-state");
+      let activeFilter = "all";
+      function updateLessons() {
+        const query = searchInput.value.trim().toLocaleLowerCase("uz");
+        let visible = 0;
+        lessonCards.forEach((card) => {
+          const gradeMatches =
+            activeFilter === "all" || card.dataset.grade === activeFilter;
+          const textMatches =
+            card.dataset.search.toLocaleLowerCase("uz").includes(query) ||
+            card
+              .querySelector("h3")
+              .textContent.toLocaleLowerCase("uz")
+              .includes(query);
+          card.hidden = !(gradeMatches && textMatches);
+          if (!card.hidden) visible++;
+        });
+        emptyState.hidden = visible > 0;
+      }
+      filterButtons.forEach((button) =>
+        button.addEventListener("click", () => {
+          activeFilter = button.dataset.filter;
+          filterButtons.forEach((item) =>
+            item.classList.toggle("selected", item === button),
+          );
+          updateLessons();
+        }),
+      );
+      searchInput.addEventListener("input", updateLessons);
+      document.querySelectorAll(".class-card").forEach((card) =>
+        card.addEventListener("click", () => {
+          activeFilter = card.dataset.grade;
+          filterButtons.forEach((item) =>
+            item.classList.toggle(
+              "selected",
+              item.dataset.filter === activeFilter,
+            ),
+          );
+          updateLessons();
+        }),
+      );
+      const menuToggle = document.querySelector(".menu-toggle");
+      menuToggle.addEventListener("click", () => {
+        const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!isOpen));
+        document
+          .querySelector(".main-nav")
+          .classList.toggle("nav-open", !isOpen);
+      });
+      document.querySelectorAll(".main-nav a").forEach((link) =>
+        link.addEventListener("click", () => {
+          document.querySelector(".main-nav").classList.remove("nav-open");
+          menuToggle.setAttribute("aria-expanded", "false");
+        }),
+      );
+    -->
+  </body>
+</html>

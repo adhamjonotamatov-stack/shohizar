@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f131d" />
+    <meta
+      name="description"
+      content="1–4-sinf o‘quvchilari uchun matematik masalalar."
+    />
+    <title>Matematik masalalar — Math Vision</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dars.css" />
+  </head>
+  <body>
+    <header class="lesson-header">
+      <a class="brand" href="index.html"
+        ><img class="brand-mark" src="logo.svg" alt="Math Vision logosi" /><span
+          >math<span class="brand-light">vision</span></span
+        ></a
+      >
+      <a class="back-link" href="index.html"
+        >← <span>Bosh sahifaga qaytish</span></a
+      >
+    </header>
+    <main class="lesson-page">
+      <a class="back-small" href="index.html#practice">← Bosh sahifa</a>
+      <section class="lesson-intro">
+        <span class="lesson-tag">MANTIQIY FIKRLASH VA HISOBLASH</span>
+        <h1>Matematik masalalar</h1>
+        <p>
+          Sinfingizga mos masalalarni tanlang. Shartni diqqat bilan o‘qib,
+          javobni raqam bilan yozing va tekshirib ko‘ring.
+        </p>
+      </section>
+      <section
+        class="practice-card problems-card"
+        aria-labelledby="problems-title"
+      >
+        <div class="section-kicker">SINFNI TANLANG</div>
+        <h2 id="problems-title">Qaysi sinf masalalarini yechamiz?</h2>
+        <div class="grade-tabs" role="group" aria-label="Sinfni tanlang">
+          <button
+            type="button"
+            class="grade-tab selected"
+            data-grade="1"
+            aria-pressed="true"
+          >
+            1-sinf
+          </button>
+          <button
+            type="button"
+            class="grade-tab"
+            data-grade="2"
+            aria-pressed="false"
+          >
+            2-sinf
+          </button>
+          <button
+            type="button"
+            class="grade-tab"
+            data-grade="3"
+            aria-pressed="false"
+          >
+            3-sinf
+          </button>
+          <button
+            type="button"
+            class="grade-tab"
+            data-grade="4"
+            aria-pressed="false"
+          >
+            4-sinf
+          </button>
+        </div>
+        <p class="problem-level" id="problem-level">1-sinf · 5 ta masala</p>
+        <div id="problem-list" class="exercise-list"></div>
+      </section>
+      <a class="bottom-back" href="index.html#classes">← Darslarga qaytish</a>
+    </main>
+    <script>
+      const problems = {
+        1: [
+          {
+            q: "Malikada 3 ta olma bor edi. Onasi yana 2 ta olma berdi. Malikada jami nechta olma bo‘ldi?",
+            a: "5",
+          },
+          {
+            q: "Daraxtda 8 ta qush o‘tirgan edi. 3 tasi uchib ketdi. Nechta qush qoldi?",
+            a: "5",
+          },
+          {
+            q: "Savatda 4 ta qizil va 3 ta sariq shar bor. Savatda jami nechta shar bor?",
+            a: "7",
+          },
+          {
+            q: "Ali 9 ta qalamdan 2 tasini ukasiga berdi. Alida nechta qalam qoldi?",
+            a: "7",
+          },
+          {
+            q: "Tokchada 5 ta kitob bor edi. Yana 4 ta kitob qo‘yildi. Endi nechta kitob bor?",
+            a: "9",
+          },
+        ],
+        2: [
+          {
+            q: "Kutubxonada 24 ta ertak kitobi bor edi. Yana 13 ta kitob olib kelindi. Jami nechta kitob bo‘ldi?",
+            a: "37",
+          },
+          {
+            q: "Bog‘da 42 ta olma pishdi. 18 tasi uzib olindi. Daraxtda nechta olma qoldi?",
+            a: "24",
+          },
+          {
+            q: "Sinfda 16 nafar qiz va 13 nafar o‘g‘il bola bor. Sinfda jami nechta o‘quvchi bor?",
+            a: "29",
+          },
+          {
+            q: "Do‘konda 50 ta daftar bor edi. 24 tasi sotildi. Nechta daftar qoldi?",
+            a: "26",
+          },
+          {
+            q: "Sayohatga 35 nafar bola ketdi, keyin yana 12 nafar bola qo‘shildi. Jami nechta bola bo‘ldi?",
+            a: "47",
+          },
+        ],
+        3: [
+          {
+            q: "Maktab bog‘ida 125 tup olma va 86 tup o‘rik daraxti bor. Jami nechta daraxt bor?",
+            a: "211",
+          },
+          {
+            q: "Omborda 360 ta kitob bor edi. Yana 125 ta kitob keltirildi. Endi nechta kitob bo‘ldi?",
+            a: "485",
+          },
+          {
+            q: "Do‘konda 500 metr mato bor edi. 175 metri sotildi. Necha metr mato qoldi?",
+            a: "325",
+          },
+          {
+            q: "Har birida 6 tadan daftar bo‘lgan 4 ta quti bor. Qutilarda jami nechta daftar bor?",
+            a: "24",
+          },
+          {
+            q: "Sayohatchilar 245 metr yo‘l yurdi, keyin yana 178 metr yurdi. Jami necha metr yurishdi?",
+            a: "423",
+          },
+        ],
+        4: [
+          {
+            q: "Kutubxonada 125 000 ta kitob bor edi. Yana 84 500 ta kitob keltirildi. Jami nechta kitob bo‘ldi?",
+            a: "209500",
+          },
+          {
+            q: "Bir yo‘lning uzunligi 2 500 metr, ikkinchisiniki 1 500 metr. Ikki yo‘l birgalikda necha metr?",
+            a: "4000",
+          },
+          {
+            q: "Bir shaharda 456 210 kishi, boshqasida 398 999 kishi yashaydi. Birinchi shaharda nechta kishi ko‘p?",
+            a: "57211",
+          },
+          {
+            q: "To‘g‘ri to‘rtburchakning tomonlari 25 sm va 18 sm. Uning perimetri necha santimetr?",
+            a: "86",
+          },
+          {
+            q: "Fermer 1 200 kg olma terdi. Har biri 250 kg dan 3 ta qutiga yana olma joyladi. Jami qancha kg olma bo‘ldi?",
+            a: "1950",
+          },
+        ],
+      };
+      const problemList = document.querySelector("#problem-list");
+      const tabs = document.querySelectorAll(".grade-tab");
+      const problemLevel = document.querySelector("#problem-level");
+      function renderProblems(grade) {
+        problemLevel.textContent = `${grade}-sinf · 5 ta masala`;
+        problemList.replaceChildren();
+        problems[grade].forEach((problem, index) => {
+          const item = document.createElement("article");
+          item.className = "exercise word-problem";
+          item.innerHTML = `<span class="exercise-number">${String(index + 1).padStart(2, "0")}</span><label class="exercise-question" for="problem-answer-${index}">${problem.q}</label><div class="answer-row"><input id="problem-answer-${index}" type="number" inputmode="numeric" autocomplete="off" aria-label="Masala ${index + 1} javobi" placeholder="Javobni raqam bilan yozing"><button type="button" data-answer="${problem.a}" data-index="${index}">Tekshirish</button></div><p class="answer-feedback" aria-live="polite"></p>`;
+          problemList.append(item);
+        });
+      }
+      tabs.forEach((tab) =>
+        tab.addEventListener("click", () => {
+          tabs.forEach((button) => {
+            const selected = button === tab;
+            button.classList.toggle("selected", selected);
+            button.setAttribute("aria-pressed", String(selected));
+          });
+          renderProblems(tab.dataset.grade);
+        }),
+      );
+      problemList.addEventListener("click", (event) => {
+        const button = event.target.closest("button[data-answer]");
+        if (!button) return;
+        const input = document.querySelector(
+          `#problem-answer-${button.dataset.index}`,
+        );
+        const feedback = button
+          .closest(".exercise")
+          .querySelector(".answer-feedback");
+        if (input.value === "") {
+          feedback.textContent = "Javobni yozib ko‘ring.";
+          feedback.className = "answer-feedback feedback-neutral";
+        } else if (input.value === button.dataset.answer) {
+          feedback.textContent = "To‘g‘ri javob! Barakalla.";
+          feedback.className = "answer-feedback feedback-correct";
+        } else {
+          feedback.textContent =
+            "Javob mos kelmadi. Masala shartini yana bir bor hisoblab ko‘ring.";
+          feedback.className = "answer-feedback feedback-wrong";
+        }
+      });
+      renderProblems("1");
+    </script>
+  </body>
+</html>
